@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "502287745540",
+    "firebase_url": "https://smartspace-ff9cf.firebaseio.com",
+    "project_id": "smartspace-ff9cf",
+    "storage_bucket": "smartspace-ff9cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502287745540:android:5bb0509f6baba233926b51",
+        "android_client_info": {
+          "package_name": "com.example.smartspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502287745540-biqtrv56nndg12941dnkl8a5iujomfrh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartspace",
+            "certificate_hash": "d430dd82b72e03d87d859ced16ab4defbf78ab43"
+          }
+        },
+        {
+          "client_id": "502287745540-r1qdqr1ht9dsle5j7hoosp1ionf7gtll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC6IpDBbhiqcPEzeTB-0DVmqg-WBpTZDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502287745540-r1qdqr1ht9dsle5j7hoosp1ionf7gtll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

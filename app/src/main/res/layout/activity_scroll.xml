@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="322dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toBottomOf="@+id/Monday24" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="2092dp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="2139dp" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="107dp"
+        android:layout_height="25dp"
+        android:dropDownWidth="80dp"
+        android:entries="@array/clock"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="2133dp" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="till "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="2139dp" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="107dp"
+        android:layout_height="25dp"
+        android:entries="@array/clock"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="2133dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closed"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="2176dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open 24 hours"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="2176dp" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="   Fill in Details"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            app:layout_scrollFlags="scroll|enterAlways"></androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="5dp"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Personal Details" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CarPark details" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab3" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab4" />
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="415dp"
+
+        android:layout_height="3308dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bfdeff"
+            android:paddingBottom="2680dp"
+            tools:context=".scroll">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".scroll">
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="383dp"
+                    android:layout_height="652dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/white_form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+                <EditText
+                    android:id="@+id/address4"
+                    android:layout_width="333dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="Address Line 4"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/address3" />
+
+                <EditText
+                    android:id="@+id/address3"
+                    android:layout_width="333dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="Address Line 3"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/address2" />
+
+                <EditText
+                    android:id="@+id/address2"
+                    android:layout_width="333dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="Address Line 2"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/address1" />
+
+                <fragment
+                    android:id="@+id/map2"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="334dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView81"
+                    tools:context=".MapsActivity" />
+
+                <TextView
+                    android:id="@+id/textView80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Carpark Location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view10" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="395dp"
+                    android:layout_height="226dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="83dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/white_form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="388dp"
+                    android:layout_height="622dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/white_form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.333"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                <Button
+                    android:id="@+id/add_ammenities2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/add_button_sign"
+                    app:layout_constraintStart_toEndOf="@+id/textView40"
+                    app:layout_constraintTop_toBottomOf="@+id/CarParkDescription" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Images"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ammenity_textbox" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Ammenities"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CarParkDescription" />
+
+                <Button
+                    android:id="@+id/add_image_button3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/add_button_sign"
+                    app:layout_constraintStart_toEndOf="@+id/textView41"
+                    app:layout_constraintTop_toBottomOf="@+id/ammenity_textbox" />
+
+                <EditText
+                    android:id="@+id/CarParkDescription"
+                    android:layout_width="356dp"
+                    android:layout_height="153dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:hint="Enter Carpark description"
+                    android:inputType="textMultiLine"
+                    android:lines="15"
+                    android:scrollbars="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <EditText
+                    android:id="@+id/ammenity_textbox"
+                    android:layout_width="359dp"
+                    android:layout_height="121dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="47dp"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="15"
+                    android:scrollbars="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CarParkDescription" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="364dp"
+                    android:layout_height="121dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ammenity_textbox"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Carpark Description"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view6" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="33dp"
+                    android:text="Confirm Password*"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="33dp"
+                    android:text="Password*"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <EditText
+                    android:id="@+id/CarpParkEmail"
+                    android:layout_width="166dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <EditText
+                    android:id="@+id/CarParkPassword"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CarpParkEmail" />
+
+                <EditText
+                    android:id="@+id/CarParkPasswordConfirm"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CarParkPassword" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Email*"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="394dp"
+                    android:layout_height="409dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/white_form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="383dp"
+                    android:layout_height="421dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/white_form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.777"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+                <EditText
+                    android:id="@+id/HourEntry6"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="18dp"
+                    android:ems="10"
+                    android:hint="Hour"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/view7"
+                    app:layout_constraintStart_toStartOf="@+id/view7" />
+
+                <EditText
+                    android:id="@+id/PriceEntry6"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="18dp"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/view7"
+                    app:layout_constraintStart_toEndOf="@+id/textView65" />
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="Hours at $"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/view7"
+                    app:layout_constraintStart_toEndOf="@+id/HourEntry6" />
+
+                <EditText
+                    android:id="@+id/HourEntry5"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Hour"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/HourEntry6"
+                    app:layout_constraintStart_toStartOf="@+id/view7" />
+
+                <EditText
+                    android:id="@+id/PriceEntry5"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/PriceEntry6"
+                    app:layout_constraintStart_toEndOf="@+id/textView64" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Hours at $"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView65"
+                    app:layout_constraintStart_toEndOf="@+id/HourEntry5" />
+
+                <EditText
+                    android:id="@+id/HourEntry3"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Hour"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/HourEntry4"
+                    app:layout_constraintStart_toStartOf="@+id/view7" />
+
+                <EditText
+                    android:id="@+id/PriceEntry3"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/PriceEntry4"
+                    app:layout_constraintStart_toEndOf="@+id/textView62" />
+
+                <EditText
+                    android:id="@+id/HourEntry4"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Hour"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/HourEntry5"
+                    app:layout_constraintStart_toStartOf="@+id/view7" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Hours at $"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView64"
+                    app:layout_constraintStart_toEndOf="@+id/HourEntry4" />
+
+                <EditText
+                    android:id="@+id/PriceEntry4"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/PriceEntry5"
+                    app:layout_constraintStart_toEndOf="@+id/textView63" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Hours at $"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView63"
+                    app:layout_constraintStart_toEndOf="@+id/HourEntry3" />
+
+                <EditText
+                    android:id="@+id/HourEntry2"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Hour"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/HourEntry3"
+                    app:layout_constraintStart_toStartOf="@+id/view7" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Hours at $"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView62"
+                    app:layout_constraintStart_toEndOf="@+id/HourEntry2" />
+
+                <EditText
+                    android:id="@+id/PriceEntry2"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/PriceEntry3"
+                    app:layout_constraintStart_toEndOf="@+id/textView57" />
+
+                <EditText
+                    android:id="@+id/PriceEntry1"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/PriceEntry2"
+                    app:layout_constraintStart_toEndOf="@+id/textView52" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Hours at $"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView57"
+                    app:layout_constraintStart_toEndOf="@+id/HourEntry1" />
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="382dp"
+                    android:layout_height="1281dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/white_form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="322dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/Saturday24" />
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="322dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/Friday24" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="322dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/Thursday24" />
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="322dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/Wednesday24" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="322dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/Tuesday24" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Sunday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+                <Spinner
+                    android:id="@+id/SundayOpenFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView71"
+                    app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/SundayOpenFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                <Spinner
+                    android:id="@+id/SundayOpenTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView72"
+                    app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                <CheckBox
+                    android:id="@+id/SundayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/SundayOpenFrom" />
+
+                <CheckBox
+                    android:id="@+id/Sunday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="open 24 hours"
+                    app:layout_constraintStart_toEndOf="@+id/SundayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/SundayOpenTill" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Saturday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <Spinner
+                    android:id="@+id/SaturdayOpenFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView68"
+                    app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/SaturdayOpenFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+                <Spinner
+                    android:id="@+id/SaturdayOpenTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView69"
+                    app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+                <CheckBox
+                    android:id="@+id/SaturdayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/SaturdayOpenFrom" />
+
+                <CheckBox
+                    android:id="@+id/Saturday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="open 24 hours"
+                    app:layout_constraintStart_toEndOf="@+id/SaturdayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/SaturdayOpenFrom" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Friday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+                <Spinner
+                    android:id="@+id/FridayOpenFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView60"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/FridayOpenFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <Spinner
+                    android:id="@+id/FridayOpenTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView61"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <CheckBox
+                    android:id="@+id/FridayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/FridayOpenFrom" />
+
+                <CheckBox
+                    android:id="@+id/Friday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="open 24 hours"
+                    app:layout_constraintStart_toEndOf="@+id/FridayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/FridayOpenFrom" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Thursday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <Spinner
+                    android:id="@+id/ThursdayOpenFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView56"
+                    app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ThursdayOpenFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+                <Spinner
+                    android:id="@+id/ThursdayOpenTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView58"
+                    app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+                <CheckBox
+                    android:id="@+id/ThursdayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/ThursdayOpenFrom" />
+
+                <CheckBox
+                    android:id="@+id/Thursday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="open 24 hours"
+                    app:layout_constraintStart_toEndOf="@+id/ThursdayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/ThursdayOpenFrom" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Wednesday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                <Spinner
+                    android:id="@+id/WednesdayTimeFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView53"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/WednesdayTimeFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <Spinner
+                    android:id="@+id/WednesdayTimeTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView54"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <CheckBox
+                    android:id="@+id/WednesdayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/WednesdayTimeFrom" />
+
+                <CheckBox
+                    android:id="@+id/Wednesday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="open 24 hours"
+                    app:layout_constraintStart_toEndOf="@+id/WednesdayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/WednesdayTimeFrom" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Tuesday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <Spinner
+                    android:id="@+id/TuesdayTimeFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView46"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/TuesdayTimeFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                <Spinner
+                    android:id="@+id/TuesdayTimeTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView47"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                <CheckBox
+                    android:id="@+id/TuesdayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toEndOf="@+id/view9"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/TuesdayTimeFrom" />
+
+                <CheckBox
+                    android:id="@+id/Tuesday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Open 24 Hours"
+                    app:layout_constraintStart_toEndOf="@+id/TuesdayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/TuesdayTimeFrom" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                <CheckBox
+                    android:id="@+id/Monday24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Open 24 hours"
+                    app:layout_constraintStart_toEndOf="@+id/MondayClosed"
+                    app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+                <Spinner
+                    android:id="@+id/MondayTimeTill"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView66"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Carpark Times"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view9" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Carpark Price"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view7" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="33dp"
+                    android:text="Number of Floors"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <EditText
+                    android:id="@+id/CarParkFloors"
+                    android:layout_width="166dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:ems="10"
+                    android:hint="Number of Floors"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carpParkSpaces" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="33dp"
+                    android:text="Smart Space"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <EditText
+                    android:id="@+id/carpParkSpaces"
+                    android:layout_width="166dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:ems="10"
+                    android:hint="Number of Spaces"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carParkName" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="33dp"
+                    android:text="Number of Spaces"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <EditText
+                    android:id="@+id/carParkName"
+                    android:layout_width="166dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:ems="10"
+                    android:hint="Carpark name"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view4" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Carpark Name*"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Carpark Details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view4" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Personal Details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <ToggleButton
+                    android:id="@+id/SmartSpaceToggle"
+                    android:layout_width="166dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@drawable/login_round"
+                    android:checked="true"
+                    android:text="ToggleButton"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CarParkFloors" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="359dp"
+                    android:layout_height="84dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Smart Space feature allows you to have more control over your carpark. You will be rquired to design a carpark layout. This allows for smart pricing and better management and also provides customers with more options. "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Monday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                <Button
+                    android:id="@+id/RegisterCarparkButton"
+                    android:layout_width="221dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="94dp"
+                    android:layout_marginRight="94dp"
+                    android:background="@drawable/login_round"
+                    android:text="Save Details"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+                <EditText
+                    android:id="@+id/HourEntry1"
+                    android:layout_width="74dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Hour"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/HourEntry2"
+                    app:layout_constraintStart_toStartOf="@+id/view7" />
+
+                <Spinner
+                    android:id="@+id/MondayTimeFrom"
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <CheckBox
+                    android:id="@+id/MondayClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Closed"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/MondayTimeFrom" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="till "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/MondayTimeFrom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="From"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="322dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toBottomOf="@+id/Monday24" />
+
+                <EditText
+                    android:id="@+id/address1"
+                    android:layout_width="333dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:hint="Address Line 1"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/map2" />
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="348dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Choose location by holding down on map or by entering address manually"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

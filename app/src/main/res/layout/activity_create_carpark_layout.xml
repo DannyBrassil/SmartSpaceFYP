@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCarparkLayout"
+    android:id="@+id/Carparklayout_CL"
+     android:background="#bfdeff">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="123dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/white_form"
+        app:layout_constraintStart_toEndOf="@+id/view11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="123dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/white_form"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/Carparklayout"
+        android:layout_width="389dp"
+        android:layout_height="609dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Spinner
+        android:id="@+id/spinner_grid_size"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:entries="@array/Spinner_grid_layout"
+        app:layout_constraintStart_toStartOf="@+id/view11"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+
+    <Spinner
+        android:id="@+id/spinner_selected_tile"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:entries="@array/Spinner_grid_tiles"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Car Park size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view11"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Tile"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <Button
+        android:id="@+id/save_layout_button"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/white_form"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/floorsLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Floor 0/0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/spacesLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Spaces 0/ 20"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/floorsLeftText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

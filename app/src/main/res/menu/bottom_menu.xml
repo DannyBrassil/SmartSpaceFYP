@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title=""
+        android:id="@+id/home"
+        android:icon="@drawable/person_pic"/>
+    <item android:title=""
+    android:id="@+id/mapsActivity"
+    android:icon="@drawable/home_pic"/>
+    <item android:title=""
+        android:id="@+id/car"
+        android:icon="@drawable/car_pic"/>
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="296dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Your booking has finished"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Star5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/star_reviews"
+        app:layout_constraintStart_toEndOf="@+id/Star4"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <TextView
+        android:id="@+id/Star4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+
+        android:background="@drawable/star_reviews"
+        app:layout_constraintStart_toEndOf="@+id/Star3"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <TextView
+        android:id="@+id/Star3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/star_reviews"
+        app:layout_constraintStart_toEndOf="@+id/Star2"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <TextView
+        android:id="@+id/Star2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/star_reviews"
+        app:layout_constraintStart_toEndOf="@+id/Star1"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <TextView
+        android:id="@+id/Star1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/star_reviews"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="325dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Star3" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="12dp"
+        android:text="Leave a review"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+    <EditText
+        android:id="@+id/reviewText"
+        android:cursorVisible="true"
+        android:layout_width="293dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="36dp"
+        android:gravity="top|left"
+        android:lines="8"
+        android:background="@null"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:hint="Leave us feedback"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/wordCountReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/reviewText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

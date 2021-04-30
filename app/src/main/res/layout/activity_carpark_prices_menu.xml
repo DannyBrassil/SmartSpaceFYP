@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bfdeff"
+    tools:context=".CarparkPricesMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bfdeff"
+        tools:context=".CarparkProfileMenu">
+
+        <View
+            android:id="@+id/view17"
+            android:layout_width="385dp"
+            android:layout_height="364dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/white_form"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Profile Details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view17" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:text="Password*"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:text="Carpark name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+        <EditText
+            android:id="@+id/carpParkEmail2"
+            android:layout_width="166dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+        <EditText
+            android:id="@+id/carParkPassword2"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carpParkEmail2" />
+
+        <EditText
+            android:id="@+id/carParkName2"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carParkPassword2" />
+
+        <TextView
+            android:id="@+id/gobacktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:text="Go Back"
+            app:layout_constraintStart_toStartOf="@+id/gobackarrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gobackarrow"
+            android:layout_width="42dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/backarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/saveProfileDetailsButton"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/login_round"
+            android:text="Save changes"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/view17"
+            app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/gobackarrow3"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/backarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="384dp"
+        android:layout_height="629dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/white_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/priceEntry12"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry6" />
+
+    <EditText
+        android:id="@+id/priceEntry6"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry4" />
+
+    <EditText
+        android:id="@+id/priceEntry5"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry2" />
+
+    <EditText
+        android:id="@+id/priceEntry4"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry3" />
+
+    <EditText
+        android:id="@+id/priceEntry3"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry2" />
+
+    <EditText
+        android:id="@+id/priceEntry2"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry" />
+
+    <EditText
+        android:id="@+id/priceEntry"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    <EditText
+        android:id="@+id/hourEntry13"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/hourEntry11" />
+
+    <EditText
+        android:id="@+id/priceEntry13"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView116"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry11" />
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Hours at $"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hourEntry11"
+        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+    <EditText
+        android:id="@+id/hourEntry11"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/hourEntry9" />
+
+    <EditText
+        android:id="@+id/priceEntry11"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView116"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry9" />
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Hours at $"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hourEntry11"
+        app:layout_constraintTop_toBottomOf="@+id/textView114" />
+
+    <EditText
+        android:id="@+id/hourEntry10"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="Hours at $"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hourEntry10"
+        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    <EditText
+        android:id="@+id/priceEntry10"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView115"
+        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    <EditText
+        android:id="@+id/hourEntry9"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/hourEntry8" />
+
+    <EditText
+        android:id="@+id/priceEntry9"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView114"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry8" />
+
+    <TextView
+        android:id="@+id/textView114"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Hours at $"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hourEntry9"
+        app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+    <EditText
+        android:id="@+id/hourEntry8"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/hourEntry7" />
+
+    <EditText
+        android:id="@+id/priceEntry8"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView113"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry7" />
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Hours at $"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hourEntry8"
+        app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+    <EditText
+        android:id="@+id/hourEntry7"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/hourEntry10" />
+
+    <EditText
+        android:id="@+id/priceEntry7"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView112"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry10" />
+
+    <TextView
+        android:id="@+id/textView112"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Hours at $"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hourEntry7"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/textView110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="Carpark Price"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view14" />
+
+    <Switch
+        android:id="@+id/smartPriceSwitch"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/priceEntry13" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="28dp"
+        android:text="Smart Pricing"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/smartPriceSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/textView118" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="4dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="92dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toTopOf="@+id/view14" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:text="Smart Prices"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintTop_toTopOf="@+id/view14" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

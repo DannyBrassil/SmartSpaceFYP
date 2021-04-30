@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">SmartSpace</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_space_register">Map</string>
+    <string name="google_maps_key">AIzaSyBAAfXj8iIaFKcRWGem-_Z5yt-eP97g_9s</string>
+
+    <string-array name="Spinner_hours">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+    <string-array name="Spinner_minutes">
+        <item>00</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="Spinner_grid_layout">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+
+    <string-array name="Spinner_grid_tiles">
+        <item>road</item>
+        <item>space</item>
+        <item>disabled space</item>
+        <item>entrance</item>
+        <item>exit</item>
+        <item>grass</item>
+        <item>empty tile</item>
+    </string-array>
+
+    <string-array name="Booking_times">
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>5 hours</item>
+
+    </string-array>
+    <string-array name="clock">
+        <item>00:00</item>
+        <item>01:00</item>
+        <item>02:00</item>
+        <item>03:00</item>
+        <item>04:00</item>
+        <item>05:00</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+        <item>24:00</item>
+    </string-array>
+
+    <string-array name="sorting_options">
+        <item>Sort by...</item>
+        <item>lowest price</item>
+        <item>highest price</item>
+        <item>Distance</item>
+        <item>Spaces</item>
+        <item>recommended</item>
+    </string-array>
+</resources>

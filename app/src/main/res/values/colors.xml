@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099ff</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="parking_yellow">#ffff00</color>
+    <color name="selectedGreen">#a4c639</color>
+    <color name="yellow">#ffe100</color>
+    <color name="SpacesLeftGreen">#429646</color>
+    <color name="SpacesLeftRed">#964942</color>
+    <color name="SpacesLeftAmber">#967a42</color>
+
+
+</resources>
